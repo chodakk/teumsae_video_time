@@ -1,9 +1,17 @@
+import os
+import sys
 from tkinter import Tk, Button, Label, ttk, Scrollbar, RIGHT, Y, Text
 from functions import add_folder, delete_selected, start_processing, save_to_excel, reset_all
 
 # GUI 구성
 app = Tk()
-app.iconbitmap(True, "pokemon.ico")
+
+if hasattr(sys, '_MEIPASS'):
+    base_path = sys._MEIPASS
+else:
+    base_path = os.path.dirname(os.path.abspath(__file__))
+icon_path = os.path.join(base_path, "pokemon.ico")
+app.iconbitmap(True, icon_path)
 app.title("동영상 재생 시간 계산기")
 app.geometry("1000x650")
 
