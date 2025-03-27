@@ -26,7 +26,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='영상 시간 추출기',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
