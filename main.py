@@ -3,7 +3,7 @@ from functions import add_folder, delete_selected, start_processing, save_to_exc
 
 # GUI 구성
 app = Tk()
-app.iconbitmap(True, "charmander-from-pokemon.ico")
+app.iconbitmap(True, "pokemon.ico")
 app.title("동영상 재생 시간 계산기")
 app.geometry("1000x650")
 
